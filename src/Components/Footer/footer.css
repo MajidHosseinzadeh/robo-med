@@ -1,0 +1,140 @@
+.footer__container{
+    margin: 5% 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: rgba(129, 160, 171, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.7px);
+    -webkit-backdrop-filter: blur(15.7px);
+    height: 100vh;
+    width: auto;
+    gap: 5rem;
+}
+
+
+.footer__robo__med__social div :nth-child(1){
+    font-family: 'Libre Baskerville', Libre Baskerville;
+}
+
+
+.footer__robo__med__social div :nth-child(2){
+    font-family: 'Poppins', Poppins;
+}
+
+
+.footer__robo__med__social div{
+    margin: 10% 0 0 10%;
+}
+
+
+.footer__robo__med__social{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 70%;
+}
+
+.footer__contacts{
+    width: 25%;
+    margin: 10%;    
+}
+
+.footer__top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    height: 60%;
+}
+
+.footer__bottom{
+    margin: 10%;
+}
+
+.footer__tel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__social__media ul li{
+    list-style: none;
+    padding: 10%;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.footer__social__link{
+    color: black;
+}
+
+.footer__social__media ul {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+@media screen and (max-width: 1000px){
+    .footer__container{
+        height: 90vh;
+    }
+    .footer__tel{
+        font-size: 0.7rem;
+    }
+    .footer__robo__med__social div :nth-child(1){
+        font-size: 2.5rem;
+    }
+    .footer__robo__med__social div :nth-child(2){
+        font-size: 1rem;
+    }
+    .footer__bottom :nth-child(1){
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .footer__container{
+        height: 70vh;
+    }
+    .footer__tel{
+        font-size: 0.7rem;
+    }
+    .footer__robo__med__social div :nth-child(1){
+        font-size: 2rem;
+    }
+    .footer__robo__med__social div :nth-child(2){
+        font-size: 1rem;
+    }
+    .footer__bottom :nth-child(1){
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .footer__container{
+        height: 60vh;
+    }
+    .footer__tel{
+        font-size: 0.5rem;
+    }
+    .footer__robo__med__social div :nth-child(1){
+        font-size: 1.5rem;
+    }
+    .footer__robo__med__social div :nth-child(2){
+        font-size: 0.7rem;
+    }
+    .footer__bottom :nth-child(1){
+        font-size: 0.6rem;
+    }
+}

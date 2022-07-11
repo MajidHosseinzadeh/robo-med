@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Libre+Baskerville&family=Poppins:wght@100&display=swap');
+
+.feature__container {
+    margin: 5% 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(129, 160, 171, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.7px);
+    -webkit-backdrop-filter: blur(15.7px);
+    height: 100vh;
+    width: auto;
+}
+
+
+.feature__information__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__information {
+    margin-left: 7%;
+}
+
+.feature__information h1 {
+    color: rgb(47, 43, 59);
+    font-size: 3rem;
+    font-family: 'Libre Baskerville', Libre Baskerville;
+}
+
+.feature__information h3 {
+    color: rgb(146, 155, 157);
+    font-family: 'Poppins', Poppins;
+}
+
+.feature__items__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.feature__items__childeren {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature__submit__button {
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border: none;
+    color: white;
+    background-color: deepskyblue;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.feature__items__childeren {
+    font-family: 'Poppins', Poppins;
+}
+
+@media screen and (max-width: 1000px) {
+    .feature__container{
+        height: 130vh;
+    }
+    .feature__information__logo{
+        flex-direction: column-reverse;
+    }
+
+    .feature__information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__information :nth-child(1){
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feature__container{
+        height: 100vh;
+    }
+    .feature__information__logo{
+        flex-direction: column-reverse;
+    }
+
+    .feature__information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .feature__information :nth-child(1){
+        font-size: 1.5rem;
+    }
+
+    .feature__information{
+        font-size: 1rem;
+    }
+    .feature__items__childeren{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feature__container{
+        height: 100vh;
+    }
+    .feature__information__logo{
+        flex-direction: column-reverse;
+    }
+
+    .feature__information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .feature__information :nth-child(1){
+        font-size: 1rem;
+    }
+
+    .feature__information{
+        font-size: 0.8rem;
+    }
+    .feature__items__childeren{
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Libre+Baskerville&family=Poppins:wght@100&display=swap');
+
+
+
+.navbar__container {
+    box-sizing: border-box;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Libre Baskerville', Libre Baskerville;
+    font-weight: bold;
+}
+
+.navbar__ul__container .navbar__sections__list .navbar__sections{
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar__sections__list{
+    list-style: none;
+}
+
+
+
+.navbar__sections__ul__active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    gap: 3rem;
+}
+
+.navbar__robo__med__logo a h1{
+    font-size: 4vh;
+}
+
+.navbar__robo__med__logo a{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    text-decoration: none;
+    color: rgb(47, 43, 59);
+}
+
+.navbar__sections__list .navbar__sections{
+    padding : 0.75em 1.5em;
+    border-radius: 5%;
+}
+
+.navbar__sections__list .navbar__sections:hover {
+    background-color: lightblue;
+    color: deepskyblue;
+}
+
+.navbar__sections__list .navbar__sections:focus {
+    background-color: lightblue;
+    color: deepskyblue;
+}
+
+.navbar__section__ul__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.nav__toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: black;
+    transition: 0.4s ease-in;
+}
+
+.nav__toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .nav__toggler {
+        display: block;
+    }
+
+    .navbar__section__ul__menu {
+        position: fixed;
+        top: 15vh;
+        right: 0;
+        width: 30%;
+        height: 85vh;
+        background: rgb(173, 216, 230,0.5);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-out;
+        z-index: 1;
+    }
+
+    .navbar__sections{
+        font-size: 0.7rem;
+    }
+}
+
+.navbar__sections__ul__active {
+    transform: translateX(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+

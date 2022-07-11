@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Libre+Baskerville&family=Poppins:wght@100&display=swap');
+
+.facilitie__container{
+    margin: 7%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facilitie__information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facilitie__information :nth-child(1){
+    font-family: 'Poppins', Poppins;
+    color: deepskyblue;
+    font-size: 1rem;
+}
+
+.facilitie__information :nth-child(2){
+    font-family: 'Libre Baskerville', Libre Baskerville;
+    color: rgb(51, 45, 67);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.facilitie__name__flag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    margin-top: 10%;
+}
+
+.facilitie__name__flag__img{
+    height: 8%;
+    width: 8%;
+    border-radius: 20%;
+}
+
+.facilitie__dot__location{
+    height: 1em;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: rgb(210, 238, 247);
+    color: deepskyblue;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    margin-bottom: 10%;
+}
+
+.facilitie__dot__location__even{
+    height: 1em;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: rgb(202, 202, 202);
+    color: rgb(25, 24, 24);
+    border-radius: 10px;
+    font-size: 0.6rem;
+    margin-bottom: 10%;
+}
+
+.facilitie__hospital__clinic{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.facilitie__hospital__clinic__children{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border: 1px solid black;
+    border-radius: 4%;
+    background-image: -webkit-linear-gradient(top, deepskyblue, deepskyblue 7%, transparent 7%, transparent 100%);
+}
+
+.facilitie__hospital__clinic__children__clinic{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border: 1px solid black;
+    border-radius: 4%;
+    background-image: -webkit-linear-gradient(top, rgb(239, 242, 87), rgb(239, 242, 87) 7%, transparent 7%, transparent 100%);
+}
+
+.facilitie__hospital__clinic__children div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.facilitie__hospital__clinic__children__clinic div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.facilitie__lorem{
+    font-family: 'Poppins', Poppins;
+    font-size: 0.8rem;
+}
+
+.facilitie__name__flag__h1{
+    font-family: 'Libre Baskerville', Libre Baskerville;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 500px){
+    .facilitie__name__flag , .facilitie__lorem, .facilitie__location{
+        font-size: 0.5rem;
+    }
+    .facilitie__name__flag :nth-child(1){
+        font-size: 0.6rem;
+    }
+}
+
